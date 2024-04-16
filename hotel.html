@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Hotel Booking Form</title>
+</head>
+<body>
+
+<h1>Hotel Booking Form</h1>
+
+<form action="submit_booking.php" method="POST">
+  <label for="name">Name:</label><br>
+
+  <input type="text" id="name" name="name" required><br>
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br><br>
+  
+  <label for="checkin">Check-in Date:</label><br>
+  <input type="date" id="checkin" name="checkin" required><br><br><br>
+  
+  <label for="checkout">Check-out Date:</label><br>
+  <input type="date" id="checkout" name="checkout" required><br><br><br>
+  
+  <label for="room-type">Room Type:</label><br><br><br>
+  <select id="room-type" name="room-type" required>
+    <option value="">Select Room Type</option>
+    <option value="single">Single</option>
+    <option value="double">Double</option>
+    <option value="suite">Suite</option>
+  </select><br>
+  <br><br>
+  <label for="guests">Number of Guests:</label><br>
+  <input type="number" id="guests" name="guests" min="1" required><br>
+  
+  <label for="special-requests">Special Requests:</label><br><br><br>
+  <textarea id="special-requests" name="special-requests"></textarea><br>
+  
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
